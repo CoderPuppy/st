@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char font[] = "Liberation Mono:pixelsize=12:antialias=false:autohint=false";
+static char font[] = "Source Code Pro:pixelsize=11:antialias=true:autohint=false";
 static int borderpx = 2;
 static char shell[] = "/bin/sh";
 static char *utmp = NULL;
@@ -70,9 +70,9 @@ static const char *colorname[] = {
 	"#c76440",
 	"#9acd32",
 	"#f0e95d",
-	"#858585",
-	"#303030",
-	"#757475",
+	"#979797",
+	"#77654c",
+	"#910047",
 	"#ffffff",
 
 	/* more colors can be added after 255 to use with DefaultXX */
@@ -255,8 +255,8 @@ static Key key[] = {
 	{ XK_Delete,        ControlMask,    "\033[3;5~",    +1,    0,    0},
 	{ XK_Delete,        ShiftMask,      "\033[2K",      -1,    0,    0},
 	{ XK_Delete,        ShiftMask,      "\033[3;2~",    +1,    0,    0},
-	{ XK_Delete,        XK_ANY_MOD,     "\177",         -1,    0,    0},
-	{ XK_Delete,        XK_ANY_MOD,     "\033H",        +1,    0,    0},
+	{ XK_Delete,        XK_ANY_MOD,     "\033[3~",      -1,    0,    0},
+	{ XK_Delete,        XK_ANY_MOD,     "\033?",        +1,    0,    0},
 	{ XK_Home,          ShiftMask,      "\033[2J",       0,   -1,    0},
 	{ XK_Home,          ShiftMask,      "\033[1;2H",     0,   +1,    0},
 	{ XK_Home,          XK_ANY_MOD,     "\033[H",        0,   -1,    0},
