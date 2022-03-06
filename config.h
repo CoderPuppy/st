@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Source Code Pro:pixelsize=10:antialias=true:autohint=false";
+static char *font = "Fira Code:pixelsize=10:antialias=true:autohint=false";
 static int borderpx = 2;
 
 /*
